@@ -115,18 +115,6 @@ luxewear/
 
 **Ryeona Sherin**
 
-- 💻 Full Stack Web Developer
-- 🎓 B.Tech Information Technology Student
-- 🌱 Passionate about Web Development and AI-powered Applications
-
-GitHub: https://github.com/your-username
-
-LinkedIn: https://linkedin.com/in/your-linkedin
-
-Email: your-email@example.com
-
----
-
 ## 📄 License
 
 This project is developed for educational and learning purposes.
