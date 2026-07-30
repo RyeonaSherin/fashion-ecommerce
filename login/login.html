@@ -160,6 +160,12 @@
 
       const popupModal = new bootstrap.Modal(document.getElementById('popupModal'));
       popupModal.show();
+
+      if (type === "login") {
+        setTimeout(() => {
+          window.location.href = "../LuxeWear/Fashion-Juststyle/index.html";
+        }, 1200);
+      }
     }
 
     function showSignup() {

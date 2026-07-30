@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>LuxeWear | Login</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      z-index: 10;
+      backdrop-filter: blur(6px);
+    }
+
+    .logo h1 {
+      font-size: 28px;
+      color: black;
+    }
+
+    .navigation a {
+      font-size: 18px;
+      color: black;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    .navigation a:hover {
+      color: red;
+    }
+
+    .bg {
+      background: url(https://i.postimg.cc/3wRThgrQ/wmremove-transformed.jpg) no-repeat center center/cover;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 80px;
+    }
+
+    .signup-box {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(20px);
+      padding: 40px;
+      border-radius: 15px;
+      max-width: 400px;
+      width: 90%;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: black;
+    }
+
+    input {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      border: 1px solid black;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.3);
+      color: #000;
+    }
+
+    input[type="submit"] {
+      background-color: rgb(243, 154, 154);
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: pink;
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .login-link a {
+      color: pink;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <a href="./index.html" style="text-decoration: none;">
+        <h1>Fashion <span style="color: red;">JustStyle</span></h1>
+      </a>
+    </div>
+    <div class="navigation">
+      <a href="./index.html">Home</a>
+      <a href="./index.html#about">About</a>
+      <a href="./collection.html">Collections</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+  </div>
+
+  <div class="bg">
+    <div class="signup-box">
+      <h2>Sign Up</h2>
+      <form>
+        <input type="text" placeholder="Full Name" />
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <input type="password" placeholder="Confirm Password" />
+        <input type="submit" value="Submit" />
+      </form>
+      <div class="login-link">
+        Already registered? <a href="#">Login here</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
