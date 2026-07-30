@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LuxeWear | Cart</title>
+  <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+
+  <header>
+    <h1>LuxeWear Checkout</h1>
+  </header>
+
+  <main class="checkout-container">
+
+    <!-- 1. Order Review -->
+    <section class="order-review">
+  <h2>1. Review Your Order</h2>
+  <div id="order-items"></div>
+  <p>Subtotal: ₹<span id="subtotal">0</span></p>
+  <!-- Optional summary area -->
+<p>Subtotal: ₹<span id="summary-subtotal">0</span></p>
+<p>Tax (8%): ₹<span id="tax">0</span></p>
+<p>Total: ₹<span id="total">0</span></p>
+</section>
+
+
+
+    <!-- 2. Delivery Form -->
+    <section class="delivery-address">
+      <h2>2. Delivery Address</h2>
+      <form id="checkoutForm">
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="text" name="first_name" placeholder="First Name" required />
+        <input type="text" name="last_name" placeholder="Last Name" required />
+        <input type="tel" name="phone" placeholder="Telephone" required />
+        <input type="text" name="address" placeholder="Delivery Address" required />
+        <input type="text" name="city" placeholder="City / Town" required />
+        <input type="text" name="state" placeholder="State / Territory" required />
+        <input type="text" name="zip" placeholder="ZIP / Postcode" required />
+        <input type="text" name="country" placeholder="Country" required />
+      </form>
+    </section>
+
+    <!-- 3. Payment + Summary -->
+    <section class="payment-summary">
+      <h2>3. Payment Method</h2>
+      <select name="payment" form="checkoutForm" required>
+        <option value="card">Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="cod">Cash on Delivery</option>
+      </select>
+
+      <h3>Order Summary</h3>
+      <p>Items: ₹<span id="summary-subtotal">0</span></p>
+      <p>Shipping: Free</p>
+      <p>Tax: ₹<span id="tax">0</span></p>
+      <p><strong>Total: ₹<span id="total">0</span></strong></p>
+
+      <button type="submit" form="checkoutForm" class="checkout-button">Complete Order</button>
+    </section>
+
+  </main>
+
+  <script src="cart.js"></script>
+</body>
+</html>

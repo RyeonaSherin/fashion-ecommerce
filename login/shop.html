@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LuxeWear | Shop</title>
+  <link rel="stylesheet" href="shop.css" />
+</head>
+<body>
+
+  <header>
+    <h1>LuxeWear</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      <a href="#">Logout</a>
+    </nav>
+  </header>
+   <h2>Shop Page</h2>
+
+
+  <section class="filters">
+    <div>
+      <label>Category:</label>
+      <select id="categoryFilter">
+        <option value="all">All</option>
+        <option value="men">Men</option>
+        <option value="women">Women</option>
+        <option value="kids">Kids</option>
+      </select>
+    </div>
+    <div>
+      <label>Size:</label>
+      <select id="sizeFilter">
+        <option value="all">All</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+      </select>
+    </div>
+    <div>
+      <label>Color:</label>
+      <select id="colorFilter">
+        <option value="all">All</option>
+        <option value="white">White</option>
+        <option value="black">Black</option>
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+      </select>
+    </div>
+  </section>
+
+  <main class="product-grid" id="productGrid">
+    <!-- Products will be loaded here -->
+  </main>
+
+  <script src="shop.js"></script>
+  
+</body>
+</html>
