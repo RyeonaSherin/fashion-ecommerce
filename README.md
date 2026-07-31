@@ -115,6 +115,4 @@ luxewear/
 
 **Ryeona Sherin**
 
-## 📄 License
 
-This project is developed for educational and learning purposes.
